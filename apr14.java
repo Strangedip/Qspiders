@@ -22,7 +22,7 @@ public class apr14 {
         }
 
         // LOOPS
-        // step 1) Initialization 2) Condtion 3) Updation
+        // step 1) Initialization 2) Condition 3) Updation
 
         // 1) while loop
         n = 3; // initialization
