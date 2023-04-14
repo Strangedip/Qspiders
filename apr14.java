@@ -22,7 +22,10 @@ public class apr14 {
         }
 
         // LOOPS
+        // step 1) Initialization 2) Condtion 3) Updation
+
         // 1) while loop
+        n = 3; // initialization
         while (n < 5) // condition
         {
             System.out.println(n); // statement
