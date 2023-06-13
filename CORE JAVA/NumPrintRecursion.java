@@ -3,7 +3,7 @@
 
 class NumPrintRecursion {
     public static void main(String[] args) {
-        nums(11); // method calling statement
+        nums(10); // method calling statement
     }
 
     public static void nums(int a) {
@@ -14,7 +14,7 @@ class NumPrintRecursion {
         }
 
         // keeps calling with a-1 value till a<=1
-        nums(--a); // recursive calling statement
+        nums(a-1); // recursive calling statement
 
         // will print only if recursion is ended
         System.out.println(a);
