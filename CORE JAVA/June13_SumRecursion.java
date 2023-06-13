@@ -1,7 +1,7 @@
 // Write sum method without using loop
 // use recursion
 
-public class SumRecursion {
+public class June13_SumRecursion {
 
     public static int recurse(int a) {
         // return 1 if a <= 1;

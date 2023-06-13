@@ -1,6 +1,6 @@
 
 
-public class Greatest {
+public class June12_Greatest {
     public static void main(String[] args) {
         
         System.out.println("Greatest num of 2 is : "+ max(5,10));

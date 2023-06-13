@@ -1,6 +1,6 @@
 
 
-public class Smallest {
+public class June12_Smallest {
     public static void main(String[] args) {
         
         System.out.println("Smallest num of 2 is : "+ max(5,10));

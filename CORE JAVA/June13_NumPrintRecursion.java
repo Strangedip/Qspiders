@@ -1,7 +1,7 @@
 // print 1 to 10 without using loops
 // using recursion
 
-class NumPrintRecursion {
+class June13_NumPrintRecursion {
     public static void main(String[] args) {
         nums(10); // method calling statement
     }

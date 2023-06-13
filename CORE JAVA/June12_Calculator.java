@@ -1,4 +1,4 @@
-class Calculator {
+class June12_Calculator {
     public static void main(String[] args) {
         System.out.println("Addition for 1,2,3,4: " + add(1, 2, 3, 4));
         System.out.println("subtraction for 1,2,3,4: " + sub(1, 2, 3, 4));
