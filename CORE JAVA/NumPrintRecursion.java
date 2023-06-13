@@ -6,8 +6,11 @@ class NumPrintRecursion{
         nums(10); // method calling statement
     }
 
+
     public static void nums(int a){
-        if (a==1){
+        
+        // recursion ends here if a <= 1
+        if (a<=1){
             return;
         }
 
