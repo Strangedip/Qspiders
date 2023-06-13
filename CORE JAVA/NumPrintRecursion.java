@@ -1,23 +1,22 @@
 // print 1 to 10 without using loops
 // using recursion
 
-class NumPrintRecursion{
+class NumPrintRecursion {
     public static void main(String[] args) {
-        nums(10); // method calling statement
+        nums(11); // method calling statement
     }
 
+    public static void nums(int a) {
 
-    public static void nums(int a){
-        
         // recursion ends here if a <= 1
-        if (a<=1){
+        if (a <= 1) {
             return;
         }
 
-        //recursive calling method
-        nums(--a); 
+        // keeps calling with a-1 value till a<=1
+        nums(--a); // recursive calling statement
 
-        //will run only if recursion is ended
-        System.out.println(a); 
-    } 
+        // will print only if recursion is ended
+        System.out.println(a);
+    }
 }
