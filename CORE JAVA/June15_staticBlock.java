@@ -1,11 +1,17 @@
-class June15_staticBlock{
-    
-    // type of static members static var,static method,
+// Global Members - Variable, Methods declared inside global area
+// Static Members : Members declared in global area prefixed with static keyword
+    // type of static members:   
+    // Static variable 
+    // Static method (Static context)
     // Static Block or Static Initializor Block (SIB)
 
+class June15_staticBlock{
+
+    //static variable
     static int a;
     static double b; 
 
+    //static method
     public static void qspider(){
         System.out.println("Qsp begins");
         System.out.println("a: "+a);
@@ -15,11 +21,12 @@ class June15_staticBlock{
         System.out.println("Qsp Ends");
     }
 
-    
+    //static block
     static {
         System.out.println("SIB-1");
     }
 
+    //static method
     public static void jspider(){
         System.out.println("Jsp begins");
         System.out.println("a: "+a);
@@ -29,6 +36,8 @@ class June15_staticBlock{
         qspider();
         System.out.println("Jsp Ends");
     }
+
+    //main method
     public static void main(String[] args) {
         System.out.println("main begins");
         double b=20.5;
