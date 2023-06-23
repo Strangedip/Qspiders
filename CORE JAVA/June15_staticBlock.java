@@ -5,7 +5,7 @@
     // Static method (Static context)
     // Static Block or Static Initializor Block (SIB)
 
-class June15_staticBlock{
+class June15_StaticBlock{
 
     //static variable
     static int a;
@@ -44,7 +44,7 @@ class June15_staticBlock{
         jspider();
         System.out.println("a: "+a);
         System.out.println("b: "+b);
-        System.out.println("b: "+June15_staticBlock.b);
+        System.out.println("b: "+June15_StaticBlock.b);
         System.out.println("main ends");
     }
     static{
