@@ -29,7 +29,7 @@ public class June27_Encapsulation {
 
 class Atm {
 
-    // show msg if no atm is out of money at start
+    // show msg if atm is out of money at start
     {
         if (Atm.atmBalance <= 0) {
             System.out.println("Out of money \n please try again later");
