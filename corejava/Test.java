@@ -20,7 +20,7 @@ public class Test {
         System.out.println(Test.eyeCount); // static members of Test class (in Test class static area)
 
         Test obj = new Test(); // creating outer non static class object to use it
-        Test.Human obj2 = new Human(); // creating inner static class object to use it
+        // Test.Human obj2 = new Human(); // creating inner static class object to use it
         Test.Human1 obj1 = obj.new Human1(); // creating inner non static class object to use it
         System.out.println(obj1.eyeCount);
     }
