@@ -50,7 +50,7 @@ make lots of project using oops concept (eg- book management system, railway res
 20. Linked List
 (cycle detection prob, fast & slow pointers)
 
-21.Stacks & Queue: -
+21. Stacks & Queue: -
 (push efficient stack, pop ef st & queue using 2 stacks)
 Do Questions from leetcode easy to medium & popularity wise +Interview Q's
 
