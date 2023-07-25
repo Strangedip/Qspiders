@@ -1,4 +1,5 @@
-// package Inheritance;
+
+package Inheritance;
 
 class Livings{
     String status="Alive";
