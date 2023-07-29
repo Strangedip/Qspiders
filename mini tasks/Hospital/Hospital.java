@@ -1,21 +1,17 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
 class Appointment {
     String date;
     String docName;
-
     public Appointment(String date, String docName) {
         this.date = date;
         this.docName = docName;
     }
-
     @Override
     public String toString() {
         return "date : " + date + " | " + "Doctor Name : " + docName;
     }
 }
-
 class Patient {
     ArrayList<Appointment> appointments = new ArrayList<>();
     String patientID;
@@ -23,7 +19,6 @@ class Patient {
     String sname;
     String age;
     String gender;
-
     public Patient(String fname, String sname, String age, String gender) {
         this.patientID = "" + ((Hospital.patientList.size())+1);
         this.fname = fname;
@@ -31,7 +26,6 @@ class Patient {
         this.age = age;
         this.gender = gender;
     }
-
     void patientDetails() {
         System.out.println("PatientID: " + patientID);
         System.out.println("Name     : " + fname + " " + sname);
@@ -39,16 +33,13 @@ class Patient {
         System.out.println("Gender   : " + gender);
         System.out.println();
     }
-
     void patientAppointments() {
         for (Appointment appointment : appointments) {
             System.out.println(appointment);
             System.out.println();
         }
     }
-
 }
-
 class Action {
     public static void addPatient() {
         Scanner in = new Scanner(System.in);
@@ -102,7 +93,6 @@ class Action {
             Home.menu();
         }
     }
-
     static Patient getPatient(String id) {
         for (Patient p : Hospital.patientList) {
             if (p.patientID.equals(id)) {
@@ -111,7 +101,6 @@ class Action {
         }
         return null;
     }
-
     static void patientList() {
         if (Hospital.patientList.isEmpty()) {
             System.out.println("No patients added");
@@ -125,7 +114,6 @@ class Action {
             Home.menu();
         }
     }
-
     static void getAppointment() {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter Patient ID : ");
@@ -142,9 +130,7 @@ class Action {
             Home.menu();
         }
     }
-
 }
-
 class Home {
     public static void menu() {
         System.out.println("1.add Patient");
@@ -155,7 +141,6 @@ class Home {
         System.out.println("6.exit");
         homeInput();
     }
-
     public static void homeInput() {
         System.out.println();
         System.out.print("Enter you choice : ");
@@ -185,10 +170,8 @@ class Home {
         }
     }
 }
-
 public class Hospital {
     public static ArrayList<Patient> patientList = new ArrayList<>();
-
     public static void main(String[] args) {
         Home.menu();
     }
