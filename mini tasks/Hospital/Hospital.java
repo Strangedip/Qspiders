@@ -27,14 +27,14 @@ class Patient {
     String gender;
 
     public Patient(String fname, String sname, String age, String gender) {
-        this.patientID = "" + ((Hospital.patientList.size()) + 1);
+        this.patientID = "E" + ((Hospital.patientList.size()) + 1);
         this.fname = fname;
         this.sname = sname;
         this.age = age;
         this.gender = gender;
         System.out.println("");
-        Hospital.patientList.add(this);
         System.out.println("Patient with id " + patientID + " Added successfully!");
+        Hospital.patientList.add(this);
         System.out.println();
     }
 
@@ -66,7 +66,7 @@ class Action {
         String gender = in.next();
         System.out.print("Enter Age : ");
         String age = in.next();
-        Patient p = new Patient(fname, sname, age, gender);
+        new Patient(fname, sname, age, gender);
         Home.menu();
     }
 
@@ -180,7 +180,7 @@ class Home {
         System.out.println();
         System.out.print("Enter you choice (0.exit) : ");
         Scanner in = new Scanner(System.in);
-        switch (in.nextLine()) {
+        switch (in.next()) {
             case "1":
                 Action.addPatient();
                 break;
