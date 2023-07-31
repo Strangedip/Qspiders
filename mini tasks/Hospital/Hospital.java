@@ -4,15 +4,17 @@ import java.util.Scanner;
 class Appointment {
     String date;
     String docName;
+    String patientID;
 
-    public Appointment(String date, String docName) {
+    public Appointment(String patientID, String date, String docName) {
+        this.patientID = patientID;
         this.date = date;
         this.docName = docName;
     }
 
     @Override
     public String toString() {
-        return "date : " + date + " | " + "Doctor Name : " + docName;
+        return "ID: " + patientID + " | date : " + date + " | " + "Doctor Name : " + docName;
     }
 }
 
@@ -25,11 +27,15 @@ class Patient {
     String gender;
 
     public Patient(String fname, String sname, String age, String gender) {
-        this.patientID = "" + ((Hospital.patientList.size())+1);
+        this.patientID = "" + ((Hospital.patientList.size()) + 1);
         this.fname = fname;
         this.sname = sname;
         this.age = age;
         this.gender = gender;
+        System.out.println("");
+        Hospital.patientList.add(this);
+        System.out.println("Patient with id " + patientID + " Added successfully!");
+        System.out.println();
     }
 
     void patientDetails() {
@@ -61,9 +67,6 @@ class Action {
         System.out.print("Enter Age : ");
         String age = in.next();
         Patient p = new Patient(fname, sname, age, gender);
-        Hospital.patientList.add(p);
-        System.out.println("Patient Added successfully!");
-        System.out.println();
         Home.menu();
     }
 
@@ -80,8 +83,10 @@ class Action {
             System.out.print("Enter Appointment Date (dd/mm/yy): ");
             String date = in.next();
             System.out.print("Enter Doctor Name : ");
-            String docName = in.next();
-            p.appointments.add(new Appointment(date, docName));
+            in.nextLine();
+            String docName = in.nextLine();
+            p.appointments.add(new Appointment(patientID, date, docName));
+            Hospital.AppointmentLog.add(new Appointment(patientID, date, docName));
             System.out.println("Appointment added");
             System.out.println();
             Home.menu();
@@ -120,7 +125,7 @@ class Action {
         } else {
             for (Patient p : Hospital.patientList) {
                 p.patientDetails();
-                
+
             }
             Home.menu();
         }
@@ -143,22 +148,37 @@ class Action {
         }
     }
 
+    static void getLast3Appointment() {
+        if (Hospital.AppointmentLog.isEmpty()) {
+            System.out.println("no entries yet");
+            System.out.println();
+            Home.menu();
+        } else {
+            int count = 0;
+            for (int i = Hospital.AppointmentLog.size() - 1; i >= 0; i--) {
+                if (count > 2) {
+                    break;
+                }
+                System.out.println(Hospital.AppointmentLog.get(i));
+                System.out.println();
+                count++;
+            }
+        }
+        Home.menu();
+    }
 }
 
 class Home {
     public static void menu() {
-        System.out.println("1.add Patient");
-        System.out.println("2.get Patient Details");
-        System.out.println("3.add appointment");
-        System.out.println("4.get appointments Details");
-        System.out.println("5.see all Patient");
-        System.out.println("6.exit");
+        System.out.println("1.Add Patient      2.Get Patient Details  3.Add Appointment");
+        System.out.println("4.My appointments  5.Patient List         6.last 3 appointments");
+
         homeInput();
     }
 
     public static void homeInput() {
         System.out.println();
-        System.out.print("Enter you choice : ");
+        System.out.print("Enter you choice (0.exit) : ");
         Scanner in = new Scanner(System.in);
         switch (in.nextLine()) {
             case "1":
@@ -177,6 +197,9 @@ class Home {
                 Action.patientList();
                 break;
             case "6":
+                Action.getLast3Appointment();
+                break;
+            case "0":
                 System.exit(0);
                 break;
             default:
@@ -188,6 +211,7 @@ class Home {
 
 public class Hospital {
     public static ArrayList<Patient> patientList = new ArrayList<>();
+    public static ArrayList<Appointment> AppointmentLog = new ArrayList<>();
 
     public static void main(String[] args) {
         Home.menu();
