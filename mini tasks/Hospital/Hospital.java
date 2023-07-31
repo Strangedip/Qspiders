@@ -199,6 +199,7 @@ class Home {
                 Action.getLast3Appointment();
                 break;
             case "0":
+                System.out.println("Take Care");
                 System.exit(0);
                 break;
             default:
