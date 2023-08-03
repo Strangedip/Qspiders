@@ -1,5 +1,5 @@
 package sol;
-
+// WAP to print all even nums till 50
 public class Loops {
     public static void main(String[] args) {
         
