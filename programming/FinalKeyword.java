@@ -1,5 +1,5 @@
 //final class cannot be inherited
-public final class Final {
+public final class FinalKeyword {
     // final keyword is used to finalize the implementation of any member
     // members which can be prefixed with final keyword are variable, methods, class
 
