@@ -11,6 +11,7 @@ public class GcdHcf {
                 gcd = j;
             }
         }
+        
         // OR
         // while (i <= a && i <= b) {
         //     if (a % i == 0 && b % i == 0) {
