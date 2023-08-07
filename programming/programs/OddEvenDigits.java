@@ -1,6 +1,6 @@
 package programs;
 
-public class AllEvenDigits {
+public class OddEvenDigits {
     public static void main(String[] args) {
         int n=41524;   
         oddprint(n);
