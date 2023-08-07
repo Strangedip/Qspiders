@@ -20,7 +20,8 @@ public class Swaping {
         System.out.println("b=" + b);
 
         System.out.println("without using third variable");
-        // without using third variable
+
+        // *without using third variable
         a = a + b;
         b = a - b;
         a = a - b;
