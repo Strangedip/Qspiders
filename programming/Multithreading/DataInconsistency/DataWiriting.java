@@ -1,9 +1,9 @@
-package Multithreading;
+
 
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 
-public class DataInconsistency {
+public class DataWiriting {
     String data = "String value"; // Data to be printed into file
 
     // address of the file
@@ -27,7 +27,7 @@ public class DataInconsistency {
     }
 
     public static void main(String[] args) {
-        DataInconsistency ref = new DataInconsistency();
+        DataWiriting ref = new DataWiriting();
         try {
             // calling the methid with possible exception in try block
             ref.writeDataIntoFile();
