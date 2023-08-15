@@ -5,6 +5,8 @@ public class P1 {
         System.out.println("demo1");
 
         try {
+
+            // prinitng current thread method
             System.out.println("current thread name :"+Thread.currentThread().getName());
             // sending current thread to wait stage
             wait();
