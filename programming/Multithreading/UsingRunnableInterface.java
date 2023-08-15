@@ -1,4 +1,4 @@
-package Multithreading;
+
 
 
 //implement Runnable interface

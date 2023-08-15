@@ -1,4 +1,4 @@
-package Multithreading;
+
 
 //inherit thread class
 public class UsingThreadClass extends Thread {
