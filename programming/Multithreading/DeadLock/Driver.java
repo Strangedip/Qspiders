@@ -1,4 +1,6 @@
-package Multithreading.DeadLock;
+package DeadLock;
+
+// package Multithreading.DeadLock;
 
 public class Driver extends Thread {
     P1 ob1= new P1();
