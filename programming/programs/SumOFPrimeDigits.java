@@ -1,6 +1,6 @@
 public class SumOFPrimeDigits {
     public static void main(String[] args) {
-        int n = 341;
+        int n = 5417;
         int sum = 0;
         while (n > 0) {
             int digit = n % 10;

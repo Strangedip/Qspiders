@@ -1,3 +1,4 @@
+package sol;
 // package programs;
 
 public class Q {
