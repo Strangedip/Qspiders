@@ -1,4 +1,4 @@
-package DeadLock;
+package Multithreading.DeadLock;
 
 public class P1 {
     public synchronized void demo1(P2 ref) {
