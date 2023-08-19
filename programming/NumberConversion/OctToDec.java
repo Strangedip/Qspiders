@@ -10,6 +10,7 @@ public class OctToDec {
             dec= lastdDigit * power;
             power = power*2;
             oct=oct/10;
+            
         }
         System.out.println(dec);
         
