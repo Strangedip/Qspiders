@@ -3,11 +3,11 @@ package NumberConversion;
 public class DecToBin_Oct {
     public static void main(String[] args) {
         int n = 12;
-        System.out.println(toBinary(n));
-        System.out.println(toOcatal(n));
+        System.out.println(decToBinary(n));
+        System.out.println(decToOcatal(n));
     }
 
-    public static String toBinary(int n) {
+    public static String decToBinary(int n) {
         String ans = "";
         while (n > 0) {
             int rem = n % 2;
@@ -17,7 +17,7 @@ public class DecToBin_Oct {
         return ans;
     }
 
-    public static String toOcatal(int n) {
+    public static String decToOcatal(int n) {
         String ans = "";
         while (n > 0) {
             int rem = n % 8;

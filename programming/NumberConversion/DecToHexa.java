@@ -3,10 +3,10 @@ package NumberConversion;
 public class DecToHexa {
     public static void main(String[] args) {
         int n = 1777;
-        System.out.println(toHexaDecimal(n));
+        System.out.println(decToHexaDecimal(n));
     }
 
-    public static String toHexaDecimal(int n) {
+    public static String decToHexaDecimal(int n) {
         String ans = "";
         while (n > 0) {
             int rem = n % 16;
