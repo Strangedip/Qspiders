@@ -1,4 +1,4 @@
-
+package DataInconsistency;
 public class P3 extends Thread {
     // creating a P1 ref which will have that single object reference address
     // using constructor

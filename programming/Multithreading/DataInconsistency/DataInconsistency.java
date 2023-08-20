@@ -1,3 +1,5 @@
+package DataInconsistency;
+
 public class DataInconsistency {
     public static void main(String[] args) {
         // one common object with methods
