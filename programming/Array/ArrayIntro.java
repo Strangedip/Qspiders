@@ -1,4 +1,6 @@
 package Array;
+
+import java.util.Scanner;
 /*  Array is a continuous block of memory
     It is used to store homogeneous type of value Array have fixed size
     To access the elements of the array we have to go for index 
@@ -6,8 +8,6 @@ package Array;
     if we try to cross the range of the index we will get ArraysOutOfBoundsException
     Arrays can be used to store default values
 */
-
-import java.util.Scanner;
 
 /*  there are 2 ways to crete an array 
     1. Using Array Litral
