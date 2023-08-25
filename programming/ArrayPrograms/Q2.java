@@ -1,4 +1,4 @@
-package Array;
+package ArrayPrograms;
 
 // total number of decrement performed to make element divisible by k
 public class Q2 {

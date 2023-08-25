@@ -1,4 +1,4 @@
-package Array;
+package ArrayPrograms;
 
 //WAP to print all odd elements in given array
 public class OddElements {

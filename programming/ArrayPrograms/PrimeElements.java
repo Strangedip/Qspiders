@@ -1,4 +1,4 @@
-package Array;
+package ArrayPrograms;
 
 public class PrimeElements {
     public static void main(String[] args) {

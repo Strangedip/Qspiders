@@ -1,4 +1,4 @@
-package Array;
+package ArrayPrograms;
 
 public class LeaderOfArray {
     public static void main(String[] args) {

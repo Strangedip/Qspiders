@@ -1,4 +1,4 @@
-package Array;
+package ArrayPrograms;
 
 public class SumOfElements {
     public static void main(String[] args) {
