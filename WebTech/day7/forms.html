@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style=" height:100vh;display: flex; align-items: center; justify-content: center; background-color: rgb(191, 225, 255);">
+        <form action=""
+            style="padding: 20px; height: 85%; width: 500px; display: flex; flex-direction: column; justify-content: center; background-color: rgb(255, 255, 255);">
+            <label for="Username">Username -text</label>
+            <input type="text" id="username" required> <br>
+
+            <label for="pass">Enter Password -password</label>
+            <input type="password" id="pass" required> <br>
+
+            <label for="email">Enter Email -email</label>
+            <input type="email" id="email" required> <br>
+
+            <label for="phone">Phone no. -tel</label>
+            <input type="tel" id="phone" pattern="[0-9]{10}" required> <br>
+
+            <label for="age">Age -number</label>
+            <input type="number" id="age" required> <br>
+
+            <label for="dob">DOB -date</label>
+            <input type="date" id="dob" required> <br>
+
+            <label for="perc">Percentage -number</label>
+            <input type="number" id="perc" max="100" min="0"> <br>
+
+            <label for="img">Select File -file</label>
+            <input type="file" id="img"> <br>
+
+            <label for="url">Enter Portfolio Link -url</label>
+            <input type="url" id="url"> <br>
+
+            <div style="display: inline;"><label for="genders_rad" style="display:inline;">Select Gender -radio</label>
+                <input type="radio" name="gender" id="genders_rad" value="male">Male
+                <input type="radio" name="gender" id="genders_rad" value="female">Female
+                <input type="radio" name="gender" id="genders_rad" value="others">Others
+            </div>
+            <div style="display: inline;"><label for="genders_chk" style="display:inline;">Select Gender -checkbox</label>
+                <input type="checkbox" name="genders" id="genders_chk" value="male">Male
+                <input type="checkbox" name="genders" id="genders_chk" value="female">Female
+                <input type="checkbox" name="genders" id="genders_chk" value="others">Others
+            </div>
+
+
+
+
+            <button type="submit" style="margin: 20px; width: 200px; align-self: center;">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
