@@ -1,0 +1,12 @@
+/* to import another css file in this css file */
+@import url(./style2.css); 
+
+#s1{
+    background-color: blue;
+}
+#s2{
+    background-color: aqua;
+}
+#s3{
+    background-color: green;
+}
