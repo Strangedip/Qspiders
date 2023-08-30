@@ -1,0 +1,19 @@
+/* descendent selector (" ") - select all the descendent */
+#main h1{
+    background-color: aquamarine;
+}
+
+/* child selector (">") - selects only child elements */
+#main > h1{
+    background-color: bisque;
+}
+
+/* adjacent sibling selector ("+") - select adjacent sibling (nearest element) */
+#main+h1{
+    background-color: blueviolet;
+}
+
+/* general sibling selector ("~") - selects all the siblings */
+#main~p{
+    background-color: chartreuse;
+}

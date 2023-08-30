@@ -1,0 +1,32 @@
+/* universal selector */
+*{
+    margin: 5px;
+    padding: 5px;
+}
+
+/* id selector */
+#heading1 {
+    color: chartreuse;
+    background-color: blueviolet;
+}
+#heading3 {
+    color: chartreuse;
+    background-color: blueviolet;
+}
+
+/* class selector */
+.heading2 {
+    color: blueviolet;
+    background-color: chartreuse;
+}
+
+/* tagname selector */
+h2{
+    background-color: rgb(0, 0, 0);
+    color: aquamarine;
+}
+
+/* group selector */
+div, h3{
+    background-color: yellow;
+}

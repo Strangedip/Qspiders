@@ -1,0 +1,26 @@
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+.form-control {
+    width: 400px;
+}
+.form-control input{
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Attribute selectors element[attribute] - select elements based on the attribute present in tag */
+.form-control > input[type="text"]
+{
+    background-color: yellow;
+}
+.form-control > input[type="submit"]
+{
+    background-color: aliceblue;
+    color: black;
+}
