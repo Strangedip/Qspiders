@@ -1,4 +1,4 @@
-package ArrayPrograms;
+package ArrayPrograms.level2;
 
 // wap to count no. of total occurence in array nums
 //in int-2

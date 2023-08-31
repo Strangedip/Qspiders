@@ -1,4 +1,4 @@
-package ArrayPrograms;
+package ArrayPrograms.level2;
 
 //wap to find number (either cubes or square) count in 1 - n
 public class Q3 {

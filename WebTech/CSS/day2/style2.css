@@ -1,0 +1,39 @@
+/* pseudo class selector ( : ) 1.dynamic 2.Structural */
+#link1:link {
+    color: greenyellow;
+}
+
+#link1:visited {
+    color: brown;
+}
+
+/* till it is clicked somewhere else  */
+#link2:focus {
+    color: blue;
+}
+
+/* till it is clicked onto  */
+#link3:active {
+    color: aqua;
+}
+
+#btn {
+    padding: 10px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: blueviolet;
+    font-size: 17px;
+}
+
+#btn:hover {
+    border: 1px solid blueviolet;
+    background-color: white;
+    color: blueviolet;
+}
+
+#btn:active{
+    font-size: 15px;
+}

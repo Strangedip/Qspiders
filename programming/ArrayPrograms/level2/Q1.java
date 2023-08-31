@@ -1,4 +1,4 @@
-package ArrayPrograms;
+package ArrayPrograms.level2;
 
 import java.util.Scanner;
 // count how many products are eligible for discount

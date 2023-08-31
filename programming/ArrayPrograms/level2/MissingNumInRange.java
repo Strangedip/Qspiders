@@ -1,4 +1,4 @@
-package ArrayPrograms;
+package ArrayPrograms.level2;
 public class MissingNumInRange {
     public static void main(String[] args) {
         int[] a = { 10, 12, 11, 13, 15, 14, 16, 17, 19, 20 };

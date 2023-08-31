@@ -1,0 +1,26 @@
+/* structural pseudo class selector ( : ) - select class based on structure eg.table, form, childs */
+
+/* target by childs */
+#list>li:first-child {
+    color: aqua;
+}
+
+#list>li:last-child {
+    color: darkcyan;
+}
+
+/* can pass odd or even also */
+#list>li:nth-child(3) {
+    color: rgb(70, 117, 117);
+}
+
+/* target by tag type  */
+.form-control>input:first-of-type{
+    background-color: aquamarine;
+}
+.form-control>input:last-of-type{
+    background-color: burlywood;
+}
+.form-control>input:nth-of-type(3){
+    background-color: aquamarine;
+}

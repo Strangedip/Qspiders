@@ -1,4 +1,4 @@
-package ArrayPrograms;
+package ArrayPrograms.level1;
 
 //WAP to print all odd elements in given array
 public class LargestInArray {

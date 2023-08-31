@@ -1,4 +1,4 @@
-package ArrayPrograms;
+package ArrayPrograms.level1;
 
 public class BinayrySearch {
     public static void main(String[] args) {

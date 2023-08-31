@@ -1,0 +1,25 @@
+/* pseudo element selectors ( :: ) - used to select part of element */
+#heading1::first-letter {
+    font-size: 50px;
+}
+
+#heading2::before {
+    content: "before ";
+}
+
+#heading3::after {
+    content: " after";
+}
+
+#para::first-line {
+    background-color: aquamarine;
+}
+
+#para::selection {
+    background-color: rgb(103, 226, 103);
+    color: blueviolet;
+}
+
+ul>li::marker {
+    color: blue;
+}

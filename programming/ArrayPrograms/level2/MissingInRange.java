@@ -1,4 +1,4 @@
-package ArrayPrograms;
+package ArrayPrograms.level2;
 
 public class MissingInRange {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ArrayPrograms;
+package ArrayPrograms.level1;
 
 import java.util.Scanner;
 /*  Array is a continuous block of memory
