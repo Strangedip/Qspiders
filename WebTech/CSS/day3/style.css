@@ -1,0 +1,45 @@
+/* 
+1. Absolute units - mm, cm, in, px (1/96 of inch), pt (1/72 of inch), pc (12 pt) 
+2. Relative units - em, rem, % (% of parent dimension), vh (% of viewport height), vw (% of viewport width) 
+*/
+
+/* abslolute unit are independent of parents and screen*/
+#div1 {
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+#div2 {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+/* relative unit depends on dimensions of parent or screen*/
+#div3 {
+    height: 10em;
+    width: 10em;
+    border: 1px solid black;
+}
+
+#div4 {
+    height: 5em;
+    width: 5em;
+    /* font-size: 2em;;
+    height: 5em;
+    width: 5em; */
+    border: 1px solid black;
+}
+
+#s1 {
+    height: 10em;
+    width: 10em;
+    border: 1px solid black;
+}
+
+#s2 {
+    height: 5em;
+    width: 5em;
+    border: 1px solid black;
+}
