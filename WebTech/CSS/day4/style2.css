@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+.table{
+    text-align: center;
+    width: 500px;
+    color: white;
+    border: white;
+    border-collapse: collapse;
+}
+th{
+    background-color: yellow;
+}
+td:hover{
+    background-color: yellow;
+    color: black;
+}

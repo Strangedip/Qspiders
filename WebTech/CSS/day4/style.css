@@ -1,0 +1,19 @@
+/* border sizing defines the content or border size shifting while performing padding */
+/* default box sizing takes content as border and changes dimension with respect to padding */
+.demo {
+    border: 1px solid black;
+
+    height: 100px;
+    width: 100px;
+    box-sizing: content-box;
+    padding: 30px;
+}
+
+/* border box takes border aspect as border and does not change the content dimension */
+.demo1 {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    padding: 30px;
+    box-sizing: border-box;
+}
