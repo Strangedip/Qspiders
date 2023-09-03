@@ -1,0 +1,58 @@
+body {
+    font-family:serif;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    margin-top: 80px;
+    color: #009100;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+thead {
+    background-color: rgb(220, 220, 220);
+    border: 1px solid black;
+}
+
+th, td {
+    padding-top: 10px;
+    padding-left: 2em;
+    text-align: start;
+
+}
+
+th {
+    font-weight: bold;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+tr, td, th {
+    border-left: 1px solid black;
+}
+tbody>  tr:hover{
+    background-color: rgb(237, 237, 237);
+}
+td:hover {
+    background-color: rgb(194, 255, 248);
+}
+
+table {
+    font-size: 1.2em;
+    border: 1px solid black;
+    width: 40em;
+    border-collapse: collapse;
+}
