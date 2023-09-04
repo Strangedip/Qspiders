@@ -15,6 +15,10 @@ import java.util.Scanner;
 
     2. Using new keyword
     datatype[] var = new datatype[(size)];
+
+    * size parameter accepts -ve or +ve all int values
+    * it will throw exception on -ve size
+    * i will create array object of 0 size but it wont be accessible
 */
 
 public class ArrayIntro {
