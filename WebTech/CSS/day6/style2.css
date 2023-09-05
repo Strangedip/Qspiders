@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* all elements are static positioned by default - wont take top bottom etc
+   position relative - takes top bottom property relative to parent position
+   position absolute - takes top bottom property dependeing on last relative positioned element 
+   position fixed - takes top bottom property dependeing viewport and is fixed even if page is moving
+   position sticky - takes top bottom property dependeing viewport and is fixed till element touches top 
+*/
+.container {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid black;
+    position: relative;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.first {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.second {
+    background-color: aqua;
+}
+
+.third {
+    background-color: blue;
+}

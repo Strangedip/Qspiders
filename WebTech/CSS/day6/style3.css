@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header,footer{
+    width: 100%;
+    height: 250px;
+    background-color: antiquewhite;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: orange;
+}
+ul{
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+li{
+    align-items: center;
+    list-style: none;
+}
+.main{
+    font-size: 20px;
+}
