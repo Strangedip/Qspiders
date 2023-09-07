@@ -83,11 +83,16 @@ footer {
 #username:focus,
 #password:focus {
   background-color: #f7f8fc;
-  outline-color: #1877f2;
+  outline: 1px solid #1877f2;
 }
 
 hr {
   width: 100%;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  /* outline: 1px solid rgba(0, 0, 0, 0.1); */
+  border: none;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.12);
 }
 
 #login-btn {
@@ -110,7 +115,7 @@ hr {
 .create-btn {
   background-color: #42b72a;
   padding: 10px;
-  width: 70%;
+  width: 50%;
   height: 50px;
   color: white;
   font-size: 17px;
