@@ -37,8 +37,8 @@ footer {
 }
 
 .fb-logo {
-  width: 306px;
-  height: 106px;
+  width: 300px;
+  height: 100px;
 }
 
 .slog>h1 {
@@ -58,13 +58,11 @@ footer {
 
 .form-control {
   width: 65%;
-  height: 350px;
   background-color: #fff;
-  padding: 0.3em 1em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 20px;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -113,7 +111,7 @@ hr {
   background-color: #42b72a;
   padding: 10px;
   width: 70%;
-  height: 40px;
+  height: 50px;
   color: white;
   font-size: 17px;
   font-family: Arial, Helvetica, sans-serif;
@@ -155,5 +153,16 @@ a {
 }
 @media (max-width: 1375px){
   .create-btn{
+    transition: 0.1s;
+    font-size: 13px;
+  }
+}
+@media (max-width: 1125px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .form-section{
+    flex-basis: 100%;
   }
 }
