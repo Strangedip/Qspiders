@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+.main-container{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 0.5s;
+}
+.main-container:hover{
+    transition: 0.5s;
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.301),-1px -1px 10px rgba(0, 0, 0, 0.395);
+}

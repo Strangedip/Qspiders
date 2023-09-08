@@ -1,6 +1,6 @@
 package String;
 
-public class VovwelCount {
+public class VowelCount {
     public static void main(String[] args) {
         String a = "String";
         // a.toLowerCase();

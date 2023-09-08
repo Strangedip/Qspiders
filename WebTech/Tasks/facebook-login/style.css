@@ -50,7 +50,7 @@ footer {
 }
 
 .form-section {
-  flex-basis: 50%;
+  flex-basis: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,7 +115,7 @@ hr {
 .create-btn {
   background-color: #42b72a;
   padding: 5px;
-  width: 50%;
+  width: 60%;
   height: 50px;
   color: white;
   font-size: 17px;
