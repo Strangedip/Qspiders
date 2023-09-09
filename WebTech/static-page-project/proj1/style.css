@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 .container{
-    height: 300vh;
     width: 100vw;
+}
+header{
+    position: sticky;
+    top: 0;
 }
 nav{
     position: sticky;
@@ -64,6 +67,340 @@ nav>.right>button{
 }
 main{
     width: 100vw;
-    height: 100vh;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.section1{
+    margin: 4rem auto 0rem auto;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fff;
+    height: 35rem;
+}
+.section1>.left{
+    padding: 2rem;
+    flex-basis: 40%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section1>.left>.text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.section1>.left>.text-container>h1{
+    font-size: 3rem;
+}
+.section1>.left>.text-container>h3{
+    font-size: 1.5rem;
+}
+.section1>.left>.text-container>.try-btn>button{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0099ff;
+    padding: 0rem 1.2rem;
+    height: 62px;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.section1>.right{
+    flex-basis: 40%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.section1>.right>img{
+    width: 100%;
+    /* height: 500px; */
+    border-radius: 1rem;
+}
+.section2{
+    margin: 0px auto 1px auto;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    background-color: #fff;
+}
+.section2>.container{
+    padding: 1rem;
+    height: 100%;
+    width: 60%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.section2>.container>.form-control{
+    display: flex;
+    gap: 20px;
+}
+.section2>.container>.form-control > #email{
+    background-color: #fafafa;
+    width: 300px;
+    height: 45px;
+    border-radius: 1rem;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+}
+.section2>.container>.form-control > #start-btn{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0099ff;
+    padding: 0rem 1.2rem;
+    height: 45px;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.section2>.container>.text{
+    text-align: center;
+    width: 70%;
+    font-size: 1.8rem;
+}
+.section3{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    background-color: #264FF5;
+}
+.section3>.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    width: 80%;
+    height: 100%;
+    background-color: #264FF5;
+    color: white;
+}
+.section3>.container>h1{
+    width: 1200px;
+    font-size: 7rem;
+}
+.section3>.container>p{
+    width: 800px;
+    font-size: 1.8rem;
+}
+.section4{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40rem;
+    background-color: #264FF5;
+}
+.section4>.container{
+    padding-top: 15px;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #264FF5;
+    color: white;
+}
+.section4>.container>.left{
+    border-radius: 30px;
+    padding: 3rem;
+    width: 600px;
+    height: 100%;
+    background-color: #7d7d7d;
+}
+.section4>.container>.left>#name{
+    padding: 10px 0px;
+    font-size: 3rem;
+    text-align: center;
+}
+.section4>.container>.left >h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.section4>.container>.left>#price{
+    padding: 10px 0px;
+    font-size: 3rem;
+    text-align: center;
+}
+.section4>.container>.left>.list{
+    display: flex;
+    padding: 40px 20px;
+}
+.section4>.container>.left>.list>ul{
+    list-style:none;
+}
+.section4>.container>.left>.list>ul>li{
+    padding: 10px 0;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+.section4>.container>.left>.go-to{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.go-to>a>svg{
+    margin: 0px 15px 0px 0px;
+    width: 20px;
+    height: 24px;
+}
+.go-to>a:visited{
+    color: white;
+}
+.go-to>a{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 10px 0;
+}
+.section4>.container>.right{
+    border-radius: 30px;
+    padding: 3rem;
+    width: 600px;
+    height: 100%;
+    background-color: #0079ae;
+}
+.section4>.container>.right>#name{
+    padding: 10px 0px;
+    font-size: 3rem;
+    text-align: center;
+}
+.section4>.container>.right >h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.section4>.container>.right>#price{
+    padding: 10px 0px;
+    font-size: 3rem;
+    text-align: center;
+}
+.section4>.container>.right>.list{
+    display: flex;
+    padding: 40px 20px;
+}
+.section4>.container>.right>.list>ul{
+    list-style:none;
+}
+.section4>.container>.right>.list>ul>li{
+    padding: 10px 0;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+.section4>.container>.right>.go-to{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section5{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 48rem;
+    background-color: #264FF5;
+}
+.section5>.container{
+    margin-top: -100px;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+    background-color: #264FF5;
+    color: white;
+}
+.section5>.container>.left{
+    border-radius: 30px;
+    padding: 3rem;
+    width: 600px;
+    height: 100%;
+    background-color: #3201eb;
+}
+.section5>.container>.left>#name{
+    padding: 10px 0px;
+    font-size: 3rem;
+    text-align: center;
+}
+.section5>.container>.left >h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.section5>.container>.left>#price{
+    padding: 10px 0px;
+    font-size: 3rem;
+    text-align: center;
+}
+.section5>.container>.left>.list{
+    display: flex;
+    padding: 40px 20px;
+}
+.section5>.container>.left>.list>ul{
+    list-style:none;
+}
+.section5>.container>.left>.list>ul>li{
+    padding: 10px 0;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+.section5>.container>.left>.go-to{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section5>.container>.right{
+    border-radius: 30px;
+    padding: 3rem;
+    width: 600px;
+    height: 100%;
+    background-color: #8160ff;
+}
+.section5>.container>.right>#name{
+    padding: 10px 0px;
+    font-size: 3rem;
+    text-align: center;
+}
+.section5>.container>.right >h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.section5>.container>.right>#price{
+    padding: 10px 0px;
+    font-size: 3rem;
+    text-align: center;
+}
+.section5>.container>.right>.list{
+    display: flex;
+    padding: 40px 20px;
+}
+.section5>.container>.right>.list>ul{
+    list-style:none;
+}
+.section5>.container>.right>.list>ul>li{
+    padding: 10px 0;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
 }
