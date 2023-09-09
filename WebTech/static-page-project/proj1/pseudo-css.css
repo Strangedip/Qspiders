@@ -1,0 +1,17 @@
+
+#btn1:hover,#btn2:hover,#start-btn:hover{
+    transition: 0.4s;
+    background-color: #0065A8;
+}
+#email:hover{
+    transition: 0.3s;
+    outline: 1px solid #0099ff;
+}
+nav>.nav-container>.left>ul>li:hover{
+    color: #1A1A1A;
+    background-color: #F2F2F2;
+}
+nav>.nav-container>.left>ul>li:first-child:hover{
+    color: #000;
+    background-color: white;
+}
