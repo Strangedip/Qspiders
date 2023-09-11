@@ -9,6 +9,7 @@
 
 body>.container {
     width: 100vw;
+    overflow: hidden;
 }
 
 header {
@@ -22,7 +23,7 @@ nav {
     top: 0;
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 80px;
+    padding: 15px 0 15px 0;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
@@ -308,13 +309,11 @@ main {
 }
 
 .section3>.container>h1 {
-    width: 1000px;
-    padding: 2rem;
+    padding: 2rem 5rem;
     font-size: 5rem;
 }
 
 .section3>.container>p {
-    width: 800px;
     font-size: 1.8rem;
 }
 
