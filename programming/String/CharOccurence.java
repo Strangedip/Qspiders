@@ -35,6 +35,7 @@ public class CharOccurence {
                 h.put(c, h.get(c) + 1);
             } else {
                 h.put(c, 1);
+                
             }
         }   
     }
