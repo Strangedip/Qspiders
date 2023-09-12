@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+header{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+nav{
+    width: inherit;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 10px;
+}
+.logo{
+    flex-basis: 28%;
+    color: #FF385C;
+}
+.search-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 38%;
+}
+.search-container>.search-box:hover{
+    transition: 0.3s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.285);
+}
+.search-container>.search-box{
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.121);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.185);
+    border-radius: 50px;
+}
+
+.search-container>.search-box>span{
+    width: 0.5px;
+    background-color: rgba(0, 0, 0, 0.27);
+    border: none;
+    margin: 0 15px;
+}
+.add-guest{
+    color: rgba(0, 0, 0, 0.533);
+}
+.anywhere,.anyweek,.add-guest{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-weight:400;
+    font-size: 15px;
+}
+.search-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 100%;
+    background-color: #FF385C;
+    color: white;
+}
+#search-icon{
+    width: 50px;
+    height: 70px;
+}
+
+.tabs{
+    flex-basis: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap:20px
+}
+.tabs>.text,.tabs>.glob-icon,.tabs>.user-tab{
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+.tabs>.text:hover,.tabs>.glob-icon:hover{
+    transition: 0.3s;
+    opacity: 100%;
+    background-color: rgba(240, 240, 240, 0.858);
+}
+.tabs>.user-tab:hover{
+    transition: 0.3s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.285);
+}
+
+.tabs>.glob-icon>svg, .tabs>.user-tab>svg{
+    width: 30px !important;
+}
+.tabs>.user-tab{
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.185);
+    padding: 5px 10px;
+    gap: 10px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 100vh;
+    height: 100px;
+}
+main>.city-icons{
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+main>ul>li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+main>ul>li{
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 70%;
+    transition: 0.3s;
+}
+main>ul>li:hover{
+    transition: 0.3s;
+    opacity: 100%;
+    background-color: rgba(240, 240, 240, 0.858);
+}
