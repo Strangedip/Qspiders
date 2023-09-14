@@ -1,4 +1,4 @@
-package String;
+package String.level1;
 
 // WAP to convert string containing only uppercase alpha and numeric values
 // in - BA1NGA2L3OR4E 

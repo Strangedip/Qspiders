@@ -1,4 +1,4 @@
-package String;
+package String.level1;
 
 public class InterCaseConert {
     public static void main(String[] args) {

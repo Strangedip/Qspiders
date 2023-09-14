@@ -1,4 +1,4 @@
-package String;
+package String.level2;
 
 public class FirstUniqueCharacter {
     public static void main(String[] args) {
