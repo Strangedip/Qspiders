@@ -1,4 +1,4 @@
-package sol;
+package basicSol;
 
 //product of all nums in range
 

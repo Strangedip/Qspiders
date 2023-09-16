@@ -1,4 +1,4 @@
-package String.level1;
+package String.level2;
 
 public class Palindrome {
     public static void main(String[] args) {

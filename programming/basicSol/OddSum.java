@@ -1,4 +1,4 @@
-package sol;
+package basicSol;
 
 //WAP find sum of odd number from 1 to 10
 public class OddSum {

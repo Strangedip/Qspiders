@@ -1,4 +1,4 @@
-package sol;
+package basicSol;
 
 //WAP to print sum till given range
 public class Sum {

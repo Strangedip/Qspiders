@@ -1,4 +1,4 @@
-package sol;
+package basicSol;
 
 import java.util.Scanner;
 

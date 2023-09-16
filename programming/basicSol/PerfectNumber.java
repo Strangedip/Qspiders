@@ -1,4 +1,4 @@
-package sol;
+package basicSol;
 
 
 public class PerfectNumber {
