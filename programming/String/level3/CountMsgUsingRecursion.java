@@ -12,6 +12,7 @@ public class CountMsgUsingRecursion {
         int newIndex = s.indexOf(msg, start);
         if (!s.contains(msg) || newIndex < 0) {
             return 0;
+            
         }
         return 1 + countSubString(s, msg, newIndex + 1);
     }
