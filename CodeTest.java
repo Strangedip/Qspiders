@@ -2,33 +2,28 @@ import java.util.*;
 
 public class CodeTest {
     public static void main(String[] args) {
-        List<Integer> a = new ArrayList<>();
-        a.add(769082435);
-        a.add(210437958);
-        a.add(673982045);
-        a.add(375809214);
-        a.add(380564127);
-        sol(a);
+        List<Integer> al = new ArrayList<>();
+        int[] a = { 0, 1, 2, 1, 2, 1, 2 };
+
     }
 
-    public static void sol(List<Integer> arr) {
-        long minSum = Integer.MAX_VALUE;
-        long maxSum = Integer.MIN_VALUE;
+    public static int singleNonDuplicate(ArrayList<Integer> arr)
+    {
+        HashMap<Integer,Integer> h= new HashMap<>();
         for (int i = 0; i < arr.size(); i++) {
-            long sum = 0;
-            for (int j = 0; j < arr.size(); j++) {
-                if (i == j) {
-                    continue;
-                }
-                sum += arr.get(i);
+            if(h.containsKey(arr.get(i))){
+                h.put(arr.get(i),arr.get(i)+1);
             }
-            if (sum >= maxSum) {
-                maxSum = sum;
-            }
-            if (sum <= minSum) {
-                minSum = sum;
+            else{
+                h.put(arr.get(i),1);
             }
         }
-        System.out.println(minSum + " " + maxSum);
+        for (Map.Entry<Integer,Integer> i : h.entrySet()) {
+            if(i.getValue()==1){
+                return i.getKey();
+            }
+        }
+        return -1;
     }
+
 }
