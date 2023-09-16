@@ -6,7 +6,7 @@ public class InsertionSort {
     public static void main(String[] args) {
         int[] a = { 4, 2, 7, 1, 6, 18, 0 };
         System.out.println(Arrays.toString(a));
-        sort1(a);
+        sort(a);
         System.out.println(Arrays.toString(a));
     }
 
