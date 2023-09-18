@@ -5,26 +5,25 @@ import java.util.Arrays;
 
 public class AnagramSubString {
     public static void main(String[] args) {
-        String s1="asdasd";
-        String s2="ad";
+        String s1 = "asdasd";
+        String s2 = "ad";
         System.out.println(findAnagramsIndices(s1, s1.length(), s2, s2.length()));
-        
+
     }
 
-    public static ArrayList<Integer> findAnagramsIndices(String str, int n, String ptr, int m){
+    public static ArrayList<Integer> findAnagramsIndices(String str, int n, String ptr, int m) {
         // Write your code here.
         ArrayList<Integer> a = new ArrayList<>();
-        for (int i = 0; i < n-m+1; i++) {
-            String subString="";
-            for (int j = i; j < i+m ; j++) {
-                subString+=str.charAt(j);
+        for (int i = 0; i < n - m + 1; i++) {
+            String subString = "";
+            for (int j = i; j < i + m; j++) {
+                subString += str.charAt(j);
             }
-            if(isAnagram(ptr, subString))
-            {
+            if (isAnagram(ptr, subString)) {
                 a.add(i);
             }
         }
-        
+
         return a;
     }
 
