@@ -21,9 +21,10 @@ interface I3{
     void add();
 }
 
-public class Jdk8{
+public class Jdk8 extends Test{
+    int hi=20;
     public static void main(String[] args) {
-        
+        System.out.println("hello");
     }
 
 }
