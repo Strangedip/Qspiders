@@ -1,9 +1,9 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class Zycus {
+public class ZycusTest {
     public static void main(String[] args) {
-        int[] a = { 1, 2, 3, 4, 5, 6, 5 };
+        int[] a = {  3, 4, 5, 6, 5 };
         System.out.println(ans(a));
     }
 
