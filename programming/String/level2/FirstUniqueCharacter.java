@@ -6,14 +6,14 @@ public class FirstUniqueCharacter {
         System.out.println(firstUniqueChar(s1));
     }
 
-    public static int firstUniqueChar(String s1) {
-        boolean[] a = new boolean[s1.length()];
-        for (int i = 0; i < s1.length(); i++) {
+    public static int firstUniqueChar(String str) {
+        boolean[] a = new boolean[str.length()];
+        for (int i = 0; i < str.length(); i++) {
             if (!a[i]) {
                 int count = 0;
-                char c = s1.charAt(i);
+                char c = str.charAt(i);
                 for (int j = 0; j < a.length; j++) {
-                    if (c == s1.charAt(j)) {
+                    if (c == str.charAt(j)) {
                         a[j] = true;
                         count++;
                     }
