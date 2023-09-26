@@ -1,4 +1,4 @@
-body{
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,13 +9,15 @@ body{
     height: 100vh;
     gap: 30px;
 }
-#ans{
+
+#ans {
     text-align: center;
     width: 90%;
     overflow-wrap: break-word;
     font-size: 3em;
 }
-.field{
+
+.field {
     background-color: rgb(232, 232, 232);
     border-radius: 10px;
     width: 400px;
@@ -25,21 +27,30 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
 }
-.field>input{
+
+.field>input {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.2em;
     width: 80%;
     height: 40px;
     border: none;
     border-radius: 6px;
 }
-.field>button{
-    background-color: rgba(181, 181, 181, 0.712);
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 1em;
+
+.field>button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
     width: 40%;
     height: 40px;
     border: none;
     border-radius: 6px;
+    background: #4CA1AF;
+    background: linear-gradient(to right, #62b3c0, #aedce4);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.field>button:active {
+    box-shadow: none;
 }
