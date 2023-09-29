@@ -4,28 +4,27 @@ import java.util.Arrays;
 
 public class MakeBitonicArr {
     public static void main(String[] args) {
-        int[] ar = { 2, 1, 5, 6, 0, 8, 7, 4 };
+        int[] ar = { 9, 8, 7, 6, 0, 1, 2, 3, 4, 5 };
         int k = 4;
         bitonic(ar, k);
         System.out.println(Arrays.toString(ar));
 
     }
 
-    public static void bitonic(int[] a, int k) {
-        if (k >= a.length) {
-            return;
-        }
-        for (int i = 0; i < k - 1; i++) {
-            for (int j = 0; j < k - 1; j++) {
+    public static void bitonic(int a[], int k) {
+        // ascenfing order sort till k
+        for (int i = 0; i <= k; i++) {
+            for (int j = 0; j < k; j++) {
                 if (a[j] > a[j + 1]) {
-                    swap(a, a[j], a[j + 1]);
+                    swap(a, j + 1, j);
                 }
             }
         }
-        for (int i = k - 1; i < a.length - 1; i++) {
-            for (int j = 0; j < a.length - 1; j++) {
+        // descending order sort from k to a.length
+        for (int i = k; i < a.length; i++) {
+            for (int j = k + 1; j < a.length - 1; j++) {
                 if (a[j] < a[j + 1]) {
-                    swap(a, a[j], a[j + 1]);
+                    swap(a, j + 1, j);
                 }
             }
         }
